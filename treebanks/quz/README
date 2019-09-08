@@ -21,3 +21,12 @@ scripts:
 ---------
 quzconll2pml.pl  converts conll to pml
 pml2conll.pml    converts pml to conll
+
+
+DZ: Convert PML to CoNLL-U using Treex:
+
+cd ahk1968-2008/
+treex -Lquz Read::QuechuaPML from="ahk1968-2008_qu.pml" Write::CoNLLU print_zone_id=0 to="ahk1968-2008_qu.conllu"
+
+(It may not work if invoked from a different folder because the PML file contains a relative reference to the PML schema.)
+
